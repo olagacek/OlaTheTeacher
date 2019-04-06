@@ -175,7 +175,7 @@ public class TextApp {
                 .setImage(new Image().encodeContent(data))
                 .setFeatures(ImmutableList.of(
                     new Feature()
-                        .setType("TEXT_DETECTION")
+                        .setType("DOCUMENT_TEXT_DETECTION")
                         .setMaxResults(MAX_RESULTS))));
       }
 
