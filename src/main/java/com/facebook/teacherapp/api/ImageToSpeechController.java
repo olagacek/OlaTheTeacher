@@ -29,6 +29,7 @@ public class ImageToSpeechController {
             ByteString imageByteStr = ByteString.copyFrom(image.getBytes());
             convert(image);
             String text = imageToText.convertImageToText(imageByteStr);
+            System.out.println(text);
             converter.convertToSpeech(text, "output.mp3");
         } catch (IOException e) {
             e.printStackTrace();
